@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - City Tourism</title>
+    <style>
+        body {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fcfcfc;
+            background-image: url('background.jpg');
+            background-size: cover;
+            color: rgb(0, 0, 0);
+        }
+        header {
+            text-align: center;
+            padding: 50px;
+            color: white;
+            background-color: rgba(10, 17, 219, 0.6);
+        }
+        header h1 {
+            font-size: 3em;
+        }
+        nav {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            margin: 0 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #ff8c00;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .gallery img {
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 8px;
+            transition: 0.4s;
+        }
+        .gallery img:hover{
+            scale: 110%;
+            box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.412);
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Gallery</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="heritage.html">Heritage</a>
+    <a href="hotel-booking.html">Hotel Booking</a>
+    <a href="gallery.html">Gallery</a>
+</nav>
+<marquee behavior="" direction="">THIS ARE NOT CLICKABLE GO TO HERITAGE FOR DETAILS OF EACH</marquee>
+
+<div class="gallery">
+    <img src="Konarka_Temple.jpg" alt="">
+    <img src="Kailasa_temple_overview,_Ellora.jpg" alt="">
+    <img src="Shore_Temple_-Mamallapuram_-Tamil_Nadu_-N-TN-C55.jpg" alt="">
+    <img src="The_Taj_Mahal_main_building.jpg" alt="">
+    <img src="Beauty_of_Kaziranga_National_Park.jpg" alt="">
+    <img src="Bar-headed_Geese-_Bharatpur_I_IMG_8335.jpg" alt="">
+    <img src="Uttar-Pradesh-Agra-Agra-Fort-Jahangiri-mahal-Apr-2004-00.JPG" alt="">
+    <img src="Shore_Temple_-Mamallapuram_-Tamil_Nadu_-N-TN-C55.jpg" alt="">
+    <img src="Pattadakal_000.JPG" alt="">
+    <img src="Fatehput_Sikiri_Buland_Darwaza_gate_2010.jpg" alt="">
+</div>
+
+</body>
+</html>

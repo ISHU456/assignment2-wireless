@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Tourism</title>
+    <style>
+        body {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fcfcfc;
+            background-image: url('background.jpg');
+            background-size: cover;
+            color: rgb(0, 0, 0);
+        }
+        header {
+            text-align: center;
+            padding: 50px;
+            color: white;
+            background-color: rgba(10, 17, 219, 0.6);
+        }
+        header h1 {
+            font-size: 3em;
+        }
+        nav {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            margin: 0 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #ff8c00;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content h2 {
+            margin-bottom: 30px;
+        }
+        .sites{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .data{
+            padding-inline: 20px;
+        }
+        .booking-form {
+            width: 50%;
+            margin: 30px auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .booking-form input, .booking-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .booking-form button {
+            padding: 10px 20px;
+            background-color: #ff8c00;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>City Tourism</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="heritage.html">Heritage</a>
+        <a href="hotel-booking.html">Hotel Booking</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+    <marquee behavior="" direction="">WELCOME TO MY TURISM WEBSITE here is my likedin page <a href="https://www.linkedin.com/in/ishu-anand-malviya-435440258?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BBTCdcgPwQ8GB5ptR17hcXw%3D%3D">ISHU ANAND MALVIYA</a></marquee>
+    <div class="content">
+        <h2>Welcome to Our Beautiful City</h2>
+        <p>Explore the rich cultural heritage, beautiful hotels, and vibrant life our city has to offer. Discover ancient monuments, scenic spots, and enjoy a memorable stay.</p>
+    </div>
+    <div class="sites">
+        <img src="Konarka_Temple.jpg" alt="">
+        <img src="Kailasa_temple_overview,_Ellora.jpg" alt="">
+        <img src="Shore_Temple_-Mamallapuram_-Tamil_Nadu_-N-TN-C55.jpg" alt="">
+        <img src="The_Taj_Mahal_main_building.jpg" alt="">
+        <img src="Beauty_of_Kaziranga_National_Park.jpg" alt="">
+        <img src="Bar-headed_Geese-_Bharatpur_I_IMG_8335.jpg" alt="">
+        <img src="Uttar-Pradesh-Agra-Agra-Fort-Jahangiri-mahal-Apr-2004-00.JPG" alt="">
+        <img src="Shore_Temple_-Mamallapuram_-Tamil_Nadu_-N-TN-C55.jpg" alt="">
+    </div>
+    <center><h1>Famous Sites</h1></center>
+    <div class="data">
+        <h1>Ajanta</h1>
+        <img src="Cave_26,_Ajanta.jpg" alt="">
+        <p>The caves at Ajanta represent a collection of Buddhist art from two periods. The first monuments date to the 2nd and 1st centuries BCE and were created by the followers of Theravada Buddhism. Further monuments were added in the 5th and 6th centuries CE, during the Vakataka dynasty, by the followers of Mahayana Buddhism. The monuments are masterpieces of Buddhist art and exerted strong artistic influence in India and the broader region, especially in Java.[8]</p>
+    </div>
+    <div class="data">
+        <h1>Manas</h1>
+        <img src="Herd_of_Elephant_in_Manas.jpg" alt="">
+        <p>The sanctuary along the Manas River covers grasslands on floodplains and forests, both in lowlands and in hills. The area is a biodiversity hotspot and home to several endangered species, including the Indian rhinoceros, Asian elephant (pictured), wild water buffalo, tiger, sloth bear, pygmy hog, Gee's golden langur, and Bengal florican. The forests are constantly being renewed after floods and changes in the river courses. Between 1992 and 2011, the site was listed as endangered due to poaching and the activities of Bodo militias.[16][4]</p>
+    </div>
+    <div class="booking-form">
+        <h2>Book Your Stay</h2>
+        <form action="#">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Phone Number" required>
+            <select required>
+                <option value="">Select Hotel</option>
+                <option value="hotel1">Hotel 1</option>
+                <option value="hotel2">Hotel 2</option>
+            </select>
+            <input type="date" placeholder="Check-in Date" required>
+            <input type="date" placeholder="Check-out Date" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+    <footer style="background-color: #333; color: white; padding: 20px 0; text-align: center;">
+        <p>&copy; 2025 Indian Heritage Sites | Preserving India's Cultural Legacy</p>
+        <p>
+            <a href="heritage.html" style="color: white; text-decoration: none; margin: 0 20px;">Contact Us</a>|
+            <a href="heritage.html" style="color: white; text-decoration: none; margin: 0 20px;" target="_blank">Archaeological Survey of India</a>|
+            <a href="heritage.html" style="color: white; text-decoration: none; margin: 0 20px;" target="_blank">Incredible India</a>
+        </p>
+        <p>Explore the timeless treasures of India’s heritage, from the ancient temples to the majestic forts.</p>
+    </footer>
+    
+</body>
+</html>
