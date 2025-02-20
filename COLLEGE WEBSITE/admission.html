@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form - Institute of Engineering and Technology</title>
+    <style>
+        body {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000d5;
+            color: white;
+            overflow-x: hidden;
+        }
+        .navbar{
+            background-color: rgb(255, 255, 255);
+        }
+        .logo{
+            margin-right: 20px;
+        }
+        .logo img{
+            width: 100px;
+        }
+        .navbar ul{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            flex-direction: row;
+            list-style: none;
+            transition:0.8s;
+        }
+        .navbar ul li a{
+            color: black;
+            text-decoration: none;
+            background-color: #7383e9;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: 0.8s;
+            color: white;
+        }
+        .navbar ul li:hover{
+            scale:110%;
+        }
+
+        .hero{
+            display: flex;
+            padding-right: 20px;
+            justify-content: center;
+            width: 100%;
+            height: 100%;;
+            background-image: url(charles-deloye-2RouMSg9Rnw-unsplash.jpg);
+            background-position: center;
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: rgb(68, 68, 68);
+        }
+        .hero .left-content{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-left: 20px;
+            padding-top: 300px;
+            position: relative;
+            width:500px;
+        }
+        .content{
+            padding-inline: 200px;
+        }
+
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            margin: 50px auto;
+            width: 60%;
+            border-radius: 10px;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: #222;
+            color: white;
+        }
+
+        .form-group input[type="radio"],
+        .form-group input[type="checkbox"] {
+            width: auto;
+        }
+
+        .form-button {
+            text-align: center;
+        }
+
+        .form-button button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #7383e9;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-button button:hover {
+            background-color: #5a6bce;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <ul>
+            <div class="logo">
+                <img src="iet logo.jpeg" alt="">
+            </div>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">Description</a></li>
+        </ul>
+    </div>
+
+    <section class="hero">
+        <div class="left-content">
+            <h1>Welcome to Institute of Engineering and Technology, DAVV</h1>
+            <p>We provide all the bachelors and Masters program in our university. With proper facility and guidance</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="content">
+            <section id="admissions">
+                <h2>Admission Form</h2>
+                <p>Fill out the form below to apply for admission to the Institute of Engineering and Technology (DAVV).</p>
+                <div class="form-container">
+                    <h2>Admission Form</h2>
+                    <form action="/submit-admission-form" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="program">Program Applying For:</label>
+                            <select id="program" name="program" required>
+                                <option value="BTech">B.Tech</option>
+                                <option value="MTech">M.Tech</option>
+                                <option value="MSc">M.Sc</option>
+                                <option value="MBA">MBA</option>
+                                <option value="PhD">Ph.D.</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Permanent Address:</label>
+                            <textarea id="address" name="address" rows="3" required placeholder="Enter your permanent address"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="qualification">Highest Qualification:</label>
+                            <input type="text" id="qualification" name="qualification" required placeholder="Enter your highest qualification">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Gender:</label>
+                            <label for="male">Male</label>
+                            <input type="radio" id="male" name="gender" value="male" required>
+                            <label for="female">Female</label>
+                            <input type="radio" id="female" name="gender" value="female" required>
+                            <label for="other">Other</label>
+                            <input type="radio" id="other" name="gender" value="other" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="terms">I agree to the terms and conditions:</label>
+                            <input type="checkbox" id="terms" name="terms" required>
+                        </div>
+
+                        <div class="form-button">
+                            <button type="submit">Submit Application</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
